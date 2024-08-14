@@ -4,3 +4,8 @@ if(a == b)
   console.log('Matched!')
 else
   console.log('Not Matched!')
+
+if(a == b)
+  console.log('Matched!')
+else
+  console.log('Not Matched!')
