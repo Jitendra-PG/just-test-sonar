@@ -16,10 +16,10 @@ export const loader: LoaderFunction = async ({ request }: LoaderFunctionArgs): P
     const citiesListBuffer = await fs.readFileSync(path.resolve('data/cities.json'), 'utf8');
     const citiesList = JSON.parse(citiesListBuffer);
 
-    const userData = await getUserDataFromSession(request);
+    const user_Data = await getUserDataFromSession(request);
     const { userId, isSignedIn } = await getUserIdIfSignedIn(request);
     
-    let selectedJobPosting = {};
+    let selected_Job_Posting = {};
 
     if (url.searchParams.size == 0) {
         return {
