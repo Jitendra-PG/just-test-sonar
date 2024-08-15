@@ -22,5 +22,5 @@ jobs:
         with:
           args: >
               -Dsonar.organization=jitendra-pg
-              -Dsonar.projectKey=just-test-sonar
+              # -Dsonar.projectKey=just-test-sonar
               -Dsonar.python.coverage.reportPaths=coverage.xml
