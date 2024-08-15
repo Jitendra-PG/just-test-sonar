@@ -22,3 +22,4 @@ jobs:
         with:
           args: >
               -Dsonar.organization=jitendra-pg
+              -Dsonar.organization=just-test-sonar
