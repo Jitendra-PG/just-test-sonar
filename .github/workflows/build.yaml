@@ -22,4 +22,4 @@ jobs:
         with:
           args: >
               -Dsonar.organization=jitendra-pg
-              -Dsonar.projectKey=just-test-sonar
+              -Dsonar.projectKey=Jitendra-PG_just-test-sonar
