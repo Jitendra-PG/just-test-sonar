@@ -3,11 +3,11 @@ const router = express.Router()
 
 
 router.post("/list-users", (req, res) => { 
-    var obj = req.body.users;
-    var someArr = [];
+    let obj = req.body.users;
+    let someArr = [];
 
     // Potential DoS if obj.length is large.
-    for (var i = 0; i < obj.length; i++) { 
+    for (let i = 0; i < obj.length; i++) { 
         someArr.push(obj[i]);
     } 
 
