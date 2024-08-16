@@ -1,14 +1,14 @@
-var express = require('express');
-var cookieParser = require('cookie-parser');
-var escape = require('escape-html');
-var serialize = require('node-serialize');
-var app = express();
+let express = require('express');
+let cookieParser = require('cookie-parser');
+let escape = require('escape-html');
+let serialize = require('node-serialize');
+let app = express();
 app.use(cookieParser())
  
 app.get('/', function(req, res) {
  if (req.cookies.profile) {
-   var str = new Buffer(req.cookies.profile, 'base64').toString();
-   var obj = serialize.unserialize(str);
+   let str = new Buffer(req.cookies.profile, 'base64').toString();
+   let obj = serialize.unserialize(str);
    if (obj.username) {
      res.send("Hello " + escape(obj.username));
    }
