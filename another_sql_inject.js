@@ -1,8 +1,8 @@
-var mysql = require('db-mysql');
-var http = require('http');
-var out;
-var valTom;
-var req = http.request(options, function(res)
+let mysql = require('db-mysql');
+let http = require('http');
+let out;
+let valTom;
+let req = http.request(options, function(res)
 {
 	res.on('data', function(chunk)
 	{
@@ -20,7 +20,7 @@ new mysql.Database(
 }
 ).connect(function(error)
 {
-	var the_Query =
+	let the_Query =
 	"INSERT INTO Customers (CustomerName, ContactName) VALUES ('Tom'," +
 	valTom + ")";
 	this.query(the_Query).execute(function(error, result)
